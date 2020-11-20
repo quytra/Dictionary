@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="eng_vni_menu">English - Vietnamese</string>
+    <string name="eng_eng_menu">English - English</string>
+    <string name="vni_eng_menu">Vietnamese - English</string>
+    <string name="fav_menu">Favorites</string>
+    <string name="bookmark_menu">Bookmark</string>
+    <string name="share_menu">Share</string>
+    <string name="help_menu">Help</string>
+    <string name="group_menu_1">Communicate</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+    <string name="hint_search_vn">Nhập vào từ để tra</string>
+    <string name="hint_search_eng">Enter the words</string>
+</resources>
