@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.tramntq2.dictionary.App;
+
 /**
  * Author: quy.tra
  * Created on 17/11/2020
@@ -30,4 +32,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     public abstract void setViews(@Nullable Bundle savedInstanceState);
 
     public abstract void setEvents();
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        App.getInstance().getDatabaseAccess().close();
+    }
 }

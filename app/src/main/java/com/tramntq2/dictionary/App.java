@@ -29,7 +29,6 @@ public class App extends Application {
         sInstance = this;
         databaseAccess = DatabaseAccess.getInstance(this);
         databaseAccess.open();
-        lstWords = databaseAccess.getWords();
     }
 
     public DatabaseAccess getDatabaseAccess() {
@@ -44,5 +43,9 @@ public class App extends Application {
 
     public List<Word> getWords() {
         return this.lstWords;
+    }
+
+    public void setWords(List<Word> lstWords) {
+        this.lstWords = lstWords;
     }
 }

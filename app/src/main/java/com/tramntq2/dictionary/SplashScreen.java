@@ -54,6 +54,7 @@ public class SplashScreen extends AppCompatActivity implements LoaderManager.Loa
     public void onLoadFinished(@NonNull Loader<ArrayList<Word>> loader, ArrayList<Word> data) {
         if (loader.getId() == LOAD_DATA_FIRST_TIME) {
             loaderManager.destroyLoader(loader.getId());
+            App.getInstance().setWords(data);
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             finish();
